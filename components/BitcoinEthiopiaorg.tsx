@@ -7,9 +7,9 @@ import Image from 'next/image';
 const BitcoinEthiopia: React.FC = () => {
     return (
         <>
-        <h2 className="text-3xl md:text-4xl font-bold text-custom text-left mb-10 md:mb-16 px-4 pb-5 pr-10">
-            01 Bitcoinbirr.Org
-        </h2>
+         <h2 className="text-3xl md:text-4xl font-bold text-custom text-left m-20 md:mb-16 px-4 pb-5 pr-10 mt:20">
+                01 Bitcoin.org
+            </h2>
         <div className="py-16" style={{ backgroundColor: 'var(--custom-color)' }}>
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-12">

@@ -29,7 +29,7 @@ const Hero2: React.FC = () => {
                         <h1 className="text-5xl lg:text-7xl font-bold mb-8">
                             <span className="text-[#0a0a0a]">#SATOSHI</span>
                             <br />
-                            <span className="text-[#0a0a0a]">IS</span>
+                            <span className="text-[#0a0a0a]">IS </span>
                             <span className="text-[#1d9374]">ETHIOPIAN</span>
                         </h1>
                         
