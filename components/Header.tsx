@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,11 +19,11 @@ const Header: React.FC = () => {
 
     return (
         <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-            isScrolled ? 'shadow-md' : ''
-        }`} style={{ backgroundColor: isScrolled ? 'var(--custom-color)' : 'white' }}>
+            isScrolled ? 'shadow-md' : 'bg-white/10 backdrop-blur-sm'
+        }`} style={{ backgroundColor: isScrolled ? 'var(--custom-color)' : 'transparent' }}>
             <nav className="px-4 lg:px-6 py-4">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <a href="#" className="flex items-center">
+                    <Link href="/" className="flex items-center">
                         <img 
                             src={isScrolled ? "/bitcoinbirrw.png" : "/bitcoinbirr.png"} 
                             className="mr-3 h-6 sm:h-9" 
@@ -33,7 +34,7 @@ const Header: React.FC = () => {
                         } transition-colors duration-300`}>
                             BitcoinBirr
                         </span>
-                    </a>
+                    </Link>
 
                     {/* Mobile menu button */}
                     <button 
@@ -53,25 +54,25 @@ const Header: React.FC = () => {
                     <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full lg:block lg:w-auto`}>
                         <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0 lg:items-center">
                             <li>
-                                <a href="#" className={`block py-2 pr-4 pl-3 ${
+                                <Link href="/" className={`block py-2 pr-4 pl-3 ${
                                     isScrolled ? 'text-white' : 'text-black'
                                 } lg:p-0`}>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className={`block py-2 pr-4 pl-3 ${
+                                <Link href="/about" className={`block py-2 pr-4 pl-3 ${
                                     isScrolled ? 'text-white' : 'text-black'
                                 } lg:p-0`}>
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className={`block py-2 pr-4 pl-3 ${
+                                <Link href="/lectures" className={`block py-2 pr-4 pl-3 ${
                                     isScrolled ? 'text-white' : 'text-black'
                                 } lg:p-0`}>
                                     Lectures
-                                </a>
+                                </Link>
                             </li>
                             <li className="relative">
                                 <button 

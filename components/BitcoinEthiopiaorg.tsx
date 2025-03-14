@@ -7,7 +7,9 @@ import Image from 'next/image';
 const BitcoinEthiopia: React.FC = () => {
     return (
         <>
-      
+        <h2 className="text-3xl md:text-4xl font-bold text-custom text-left mb-10 md:mb-16 px-4 pb-5 pr-10">
+            01 Bitcoinbirr.Org
+        </h2>
         <div className="py-16" style={{ backgroundColor: 'var(--custom-color)' }}>
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-12">
@@ -32,7 +34,7 @@ const BitcoinEthiopia: React.FC = () => {
                             BitcoinBirr is an open source initiative to educate and share bitcoin material with populations in all economies. 2021 priorities include translating copies of various books and relevant materials in local Ethiopian and Eritrean languages, beginning with The Little Bitcoin Book. Thank you to all the generous supporters of this initiative.
                         </p>
                         
-                        <motion.button
+                        {/* <motion.button
                             className="mt-8 bg-white text-custom px-8 py-3 rounded-md font-semibold flex items-center hover:bg-gray-100 transition-colors"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -45,7 +47,7 @@ const BitcoinEthiopia: React.FC = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
-                        </motion.button>
+                        </motion.button> */}
                     </motion.div>
 
                     {/* Image Section */}
