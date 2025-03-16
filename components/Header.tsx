@@ -68,10 +68,10 @@ const Header: React.FC = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/lectures" className={`block py-2 pr-4 pl-3 ${
+                                <Link href="/media" className={`block py-2 pr-4 pl-3 ${
                                     isScrolled ? 'text-white' : 'text-black'
                                 } lg:p-0`}>
-                                    Lectures
+                              Media
                                 </Link>
                             </li>
                             <li className="relative">
